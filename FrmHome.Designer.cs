@@ -35,6 +35,7 @@
             this.miCurvesToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.miSpecialToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.miRectanguloToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.miRomboToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -75,7 +76,8 @@
             // miIrregularPlygonToolStripMenuItem
             // 
             this.miIrregularPlygonToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.miRectanguloToolStripMenuItem});
+            this.miRectanguloToolStripMenuItem,
+            this.miRomboToolStripMenuItem});
             this.miIrregularPlygonToolStripMenuItem.Name = "miIrregularPlygonToolStripMenuItem";
             this.miIrregularPlygonToolStripMenuItem.Size = new System.Drawing.Size(314, 26);
             this.miIrregularPlygonToolStripMenuItem.Text = "Polígonos Irregulares";
@@ -102,6 +104,13 @@
             this.miRectanguloToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
             this.miRectanguloToolStripMenuItem.Text = "Rectangulo";
             this.miRectanguloToolStripMenuItem.Click += new System.EventHandler(this.miRectanguloToolStripMenuItem_Click);
+            // 
+            // miRomboToolStripMenuItem
+            // 
+            this.miRomboToolStripMenuItem.Name = "miRomboToolStripMenuItem";
+            this.miRomboToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
+            this.miRomboToolStripMenuItem.Text = "Rombo";
+            this.miRomboToolStripMenuItem.Click += new System.EventHandler(this.miRomboToolStripMenuItem_Click);
             // 
             // FrmHome
             // 
@@ -131,6 +140,7 @@
         private System.Windows.Forms.ToolStripMenuItem miCurvesToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem miSpecialToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem miRectanguloToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem miRomboToolStripMenuItem;
     }
 }
 

@@ -61,8 +61,8 @@ namespace SHAPES_2D_BOLANOS_FLORES_VENEGAS
 
             rectangle = new CRectangle(position, Color.Blue, width, height);
 
-            lblArea.Text = rectangle.GetArea().ToString();
-            lblPerimeter.Text = rectangle.GetPerimeter().ToString();
+            lblArea.Text = rectangle.GetArea().ToString("F2");
+            lblPerimeter.Text = rectangle.GetPerimeter().ToString("F2");
 
             picCanvas.Invalidate();
             lblMessage.Text = "Polígono generado correctamente";
