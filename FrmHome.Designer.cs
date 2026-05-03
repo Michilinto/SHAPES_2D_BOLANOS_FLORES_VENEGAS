@@ -34,6 +34,7 @@
             this.miIrregularPlygonToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.miCurvesToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.miSpecialToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.miRectanguloToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -41,7 +42,6 @@
             // 
             this.menuStrip1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(48)))), ((int)(((byte)(77)))), ((int)(((byte)(137)))));
             this.menuStrip1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
-            this.menuStrip1.GripMargin = new System.Windows.Forms.Padding(2, 2, 0, 2);
             this.menuStrip1.GripStyle = System.Windows.Forms.ToolStripGripStyle.Visible;
             this.menuStrip1.ImageScalingSize = new System.Drawing.Size(24, 24);
             this.menuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
@@ -50,7 +50,7 @@
             this.miSpecialToolStripMenuItem});
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
-            this.menuStrip1.Size = new System.Drawing.Size(874, 32);
+            this.menuStrip1.Size = new System.Drawing.Size(777, 29);
             this.menuStrip1.TabIndex = 1;
             this.menuStrip1.Text = "menuStrip1";
             // 
@@ -62,20 +62,22 @@
             this.miPolygonToolStripMenuItem.Font = new System.Drawing.Font("Ubuntu Mono Medium", 9.999999F, System.Drawing.FontStyle.Bold);
             this.miPolygonToolStripMenuItem.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(205)))), ((int)(((byte)(98)))));
             this.miPolygonToolStripMenuItem.Name = "miPolygonToolStripMenuItem";
-            this.miPolygonToolStripMenuItem.Size = new System.Drawing.Size(125, 28);
+            this.miPolygonToolStripMenuItem.Size = new System.Drawing.Size(114, 25);
             this.miPolygonToolStripMenuItem.Text = "Polígonos";
             // 
             // miRegularPolygonToolStripMenuItem
             // 
             this.miRegularPolygonToolStripMenuItem.Name = "miRegularPolygonToolStripMenuItem";
-            this.miRegularPolygonToolStripMenuItem.Size = new System.Drawing.Size(281, 34);
+            this.miRegularPolygonToolStripMenuItem.Size = new System.Drawing.Size(314, 26);
             this.miRegularPolygonToolStripMenuItem.Text = "Polígonos Regulares";
             this.miRegularPolygonToolStripMenuItem.Click += new System.EventHandler(this.miRegularPolygonToolStripMenuItem_Click);
             // 
             // miIrregularPlygonToolStripMenuItem
             // 
+            this.miIrregularPlygonToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.miRectanguloToolStripMenuItem});
             this.miIrregularPlygonToolStripMenuItem.Name = "miIrregularPlygonToolStripMenuItem";
-            this.miIrregularPlygonToolStripMenuItem.Size = new System.Drawing.Size(281, 34);
+            this.miIrregularPlygonToolStripMenuItem.Size = new System.Drawing.Size(314, 26);
             this.miIrregularPlygonToolStripMenuItem.Text = "Polígonos Irregulares";
             // 
             // miCurvesToolStripMenuItem
@@ -83,7 +85,7 @@
             this.miCurvesToolStripMenuItem.Font = new System.Drawing.Font("Ubuntu Mono Medium", 9.999999F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.miCurvesToolStripMenuItem.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(205)))), ((int)(((byte)(98)))));
             this.miCurvesToolStripMenuItem.Name = "miCurvesToolStripMenuItem";
-            this.miCurvesToolStripMenuItem.Size = new System.Drawing.Size(213, 28);
+            this.miCurvesToolStripMenuItem.Size = new System.Drawing.Size(194, 25);
             this.miCurvesToolStripMenuItem.Text = "Figuras Curveadas";
             // 
             // miSpecialToolStripMenuItem
@@ -91,18 +93,26 @@
             this.miSpecialToolStripMenuItem.Font = new System.Drawing.Font("Ubuntu Mono Medium", 9.999999F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.miSpecialToolStripMenuItem.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(205)))), ((int)(((byte)(98)))));
             this.miSpecialToolStripMenuItem.Name = "miSpecialToolStripMenuItem";
-            this.miSpecialToolStripMenuItem.Size = new System.Drawing.Size(224, 28);
+            this.miSpecialToolStripMenuItem.Size = new System.Drawing.Size(204, 25);
             this.miSpecialToolStripMenuItem.Text = "Figuras Especiales";
+            // 
+            // miRectanguloToolStripMenuItem
+            // 
+            this.miRectanguloToolStripMenuItem.Name = "miRectanguloToolStripMenuItem";
+            this.miRectanguloToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
+            this.miRectanguloToolStripMenuItem.Text = "Rectangulo";
+            this.miRectanguloToolStripMenuItem.Click += new System.EventHandler(this.miRectanguloToolStripMenuItem_Click);
             // 
             // FrmHome
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(874, 570);
+            this.ClientSize = new System.Drawing.Size(777, 456);
             this.Controls.Add(this.menuStrip1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.Fixed3D;
             this.IsMdiContainer = true;
             this.MainMenuStrip = this.menuStrip1;
+            this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.Name = "FrmHome";
             this.Text = "Home";
             this.menuStrip1.ResumeLayout(false);
@@ -120,6 +130,7 @@
         private System.Windows.Forms.ToolStripMenuItem miIrregularPlygonToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem miCurvesToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem miSpecialToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem miRectanguloToolStripMenuItem;
     }
 }
 

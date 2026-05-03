@@ -14,7 +14,7 @@ namespace SHAPES_2D_BOLANOS_FLORES_VENEGAS
     public partial class FrmHome : Form
     {
         private FrmRegularPolygon frmRegularPolygon = null;
-
+        private FrmRectangle frmRectangle = null;
         public FrmHome()
         {
             InitializeComponent();
@@ -35,6 +35,24 @@ namespace SHAPES_2D_BOLANOS_FLORES_VENEGAS
                 frmRegularPolygon.BringToFront();
                 frmRegularPolygon.Focus();
                 frmRegularPolygon.WindowState = FormWindowState.Maximized;
+            }
+        }
+
+        private void miRectanguloToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            if (frmRectangle == null || frmRectangle.IsDisposed)
+            {
+                frmRectangle = new FrmRectangle();
+                frmRectangle.MdiParent = this;
+                frmRectangle.FormBorderStyle = FormBorderStyle.None;
+                frmRectangle.Show();
+                frmRectangle.WindowState = FormWindowState.Maximized;
+            }
+            else
+            {
+                frmRectangle.BringToFront(); 
+                frmRectangle.Focus();
+                frmRectangle.WindowState = FormWindowState.Maximized;
             }
         }
     }
