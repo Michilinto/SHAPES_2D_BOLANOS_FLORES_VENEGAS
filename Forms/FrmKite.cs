@@ -11,17 +11,12 @@ using System.Windows.Forms;
 
 namespace SHAPES_2D_BOLANOS_FLORES_VENEGAS.Forms
 {
-    public partial class FrmRhombus : Form
+    public partial class FrmKite : Form
     {
-        private Rhombus rombo;
-        public FrmRhombus()
+        private Kite kite;
+        public FrmKite()
         {
             InitializeComponent();
-        }
-
-        private void lblSubtitle_Click(object sender, EventArgs e)
-        {
-
         }
 
         private void btnCalcular_Click(object sender, EventArgs e)
@@ -46,14 +41,12 @@ namespace SHAPES_2D_BOLANOS_FLORES_VENEGAS.Forms
                     return;
                 }
 
-                rombo = new Rhombus(new Point(50, 50), Color.Black, d1, d2);
+                kite = new Kite(new Point(50, 50), Color.Blue, d1, d2);
 
-                double area = rombo.GetArea();
-                double perimeter = rombo.GetPerimeter();
+                lblArea.Text = kite.GetArea().ToString("F2");
+                lblPerimeter.Text = kite.GetPerimeter().ToString("F2");
 
-                lblArea.Text = area.ToString("F2");
-                lblPerimeter.Text = perimeter.ToString("F2");
-                lblMessage.Text = "Cálculo completado exitosamente";
+                lblMessage.Text = "Polígono generado correctamente";
 
                 picCanvas.Invalidate();
             }
@@ -67,19 +60,19 @@ namespace SHAPES_2D_BOLANOS_FLORES_VENEGAS.Forms
         {
             lblArea.Text = "...";
             lblPerimeter.Text = "...";
+            lblMessage.Text = "Datos limpiados";
             txtDiagonal1.Text = "";
             txtDiagonal2.Text = "";
-            rombo = null;
-            lblMessage.Text = "Datos limpiados";
+            kite = null;
 
             picCanvas.Invalidate();
         }
 
         private void picCanvas_Paint(object sender, PaintEventArgs e)
         {
-            if (rombo != null)
+            if (kite != null)
             {
-                rombo.Draw(e.Graphics);
+                kite.Draw(e.Graphics);
             }
         }
     }

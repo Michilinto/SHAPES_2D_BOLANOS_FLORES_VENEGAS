@@ -11,45 +11,47 @@ using System.Windows.Forms;
 
 namespace SHAPES_2D_BOLANOS_FLORES_VENEGAS.Forms
 {
-    public partial class FrmRhombus : Form
+    public partial class FrmParallelogram : Form
     {
-        private Rhombus rombo;
-        public FrmRhombus()
+        private Parallelogram parallelogram;
+        public FrmParallelogram()
         {
             InitializeComponent();
         }
 
-        private void lblSubtitle_Click(object sender, EventArgs e)
+        private void picCanvas_Click(object sender, EventArgs e)
         {
-
+       
         }
 
         private void btnCalcular_Click(object sender, EventArgs e)
         {
             try
             {
-                if (string.IsNullOrWhiteSpace(txtDiagonal1.Text) || string.IsNullOrWhiteSpace(txtDiagonal2.Text))
+                if(string.IsNullOrEmpty(txtBase.Text) || string.IsNullOrEmpty(txtLado.Text) || string.IsNullOrEmpty(txtAngulo.Text))
                 {
-                    lblMessage.Text = "Por favor, ingrese los valores de las diagonales";
+                    lblMessage.Text = "Por favor, ingrese todos los valores";
                     return;
                 }
-
-                if (!double.TryParse(txtDiagonal1.Text, out double d1) || !double.TryParse(txtDiagonal2.Text, out double d2))
+                if(!double.TryParse(txtBase.Text, out double baseLength) || !double.TryParse(txtLado.Text, out double side) || !double.TryParse(txtAngulo.Text, out double angle))
                 {
                     lblMessage.Text = "Los valores deben ser números válidos";
                     return;
                 }
-
-                if (d1 <= 0 || d2 <= 0)
+                if (baseLength <= 0 || side <= 0)
                 {
-                    lblMessage.Text = "Las diagonales deben ser mayores que cero";
+                    lblMessage.Text = "La base y el lado deben ser mayores que cero";
                     return;
                 }
+                if (angle <= 0 || angle >= 180)
+                {
+                    lblMessage.Text = "El ángulo debe ser mayor que 0 y menor que 180";
+                    return;
+                }
+                parallelogram = new Parallelogram(new Point(50, 50), Color.Black, baseLength, side, angle);
 
-                rombo = new Rhombus(new Point(50, 50), Color.Black, d1, d2);
-
-                double area = rombo.GetArea();
-                double perimeter = rombo.GetPerimeter();
+                double area = parallelogram.GetArea();
+                double perimeter = parallelogram.GetPerimeter();
 
                 lblArea.Text = area.ToString("F2");
                 lblPerimeter.Text = perimeter.ToString("F2");
@@ -61,15 +63,17 @@ namespace SHAPES_2D_BOLANOS_FLORES_VENEGAS.Forms
             {
                 lblMessage.Text = "Error: " + ex.Message;
             }
+
         }
 
         private void btnClean_Click(object sender, EventArgs e)
         {
             lblArea.Text = "...";
             lblPerimeter.Text = "...";
-            txtDiagonal1.Text = "";
-            txtDiagonal2.Text = "";
-            rombo = null;
+            txtBase.Text = "";
+            txtAngulo.Text = "";
+            txtLado.Text = "";
+            parallelogram = null;
             lblMessage.Text = "Datos limpiados";
 
             picCanvas.Invalidate();
@@ -77,9 +81,9 @@ namespace SHAPES_2D_BOLANOS_FLORES_VENEGAS.Forms
 
         private void picCanvas_Paint(object sender, PaintEventArgs e)
         {
-            if (rombo != null)
+            if (parallelogram != null)
             {
-                rombo.Draw(e.Graphics);
+                parallelogram.Draw(e.Graphics);
             }
         }
     }

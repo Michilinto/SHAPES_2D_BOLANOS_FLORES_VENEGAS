@@ -22,6 +22,10 @@ namespace SHAPES_2D_BOLANOS_FLORES_VENEGAS.Shapes
 
         private static List<Point> GenerateVertices(Point position, double width, double height)
         {
+            double scale = 5;
+
+            width *= scale;
+            height *= scale;
             List<Point> vertices = new List<Point>
             {
                 position,
@@ -34,9 +38,13 @@ namespace SHAPES_2D_BOLANOS_FLORES_VENEGAS.Shapes
 
         public override void Draw(Graphics g)
         {
-            using (Pen pen = new Pen(Color))
+            g.SmoothingMode = System.Drawing.Drawing2D.SmoothingMode.AntiAlias;
+
+            using (SolidBrush brush = new SolidBrush(Color.FromArgb(111, 171, 129)))
+            using (Pen pen = new Pen(Color.FromArgb(9, 77, 29), 3))
             {
-                g.DrawRectangle(pen, Position.X, Position.Y, (float)Width, (float)Height);
+                g.FillPolygon(brush, Vertices.ToArray());
+                g.DrawPolygon(pen, Vertices.ToArray());
             }
         }
 

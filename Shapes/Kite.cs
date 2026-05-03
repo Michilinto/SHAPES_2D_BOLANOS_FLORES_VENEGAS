@@ -7,12 +7,12 @@ using System.Threading.Tasks;
 
 namespace SHAPES_2D_BOLANOS_FLORES_VENEGAS.Shapes
 {
-    class Rhombus : IrregularPolygon
+    class Kite : IrregularPolygon
     {
         public double Diagonal1 { get; set; }
         public double Diagonal2 { get; set; }
 
-        public Rhombus(Point position, Color color, double diagonal1, double diagonal2)
+        public Kite(Point position, Color color, double diagonal1, double diagonal2)
             : base(GenerateVertices(position, diagonal1, diagonal2), position, color)
         {
             Diagonal1 = diagonal1;
@@ -22,16 +22,17 @@ namespace SHAPES_2D_BOLANOS_FLORES_VENEGAS.Shapes
 
         private static List<Point> GenerateVertices(Point position, double diagonal1, double diagonal2)
         {
-            double scale = 10;
-            double halfD1 = (diagonal1 * scale) / 2;
-            double halfD2 = (diagonal2 * scale) / 2;
+            double scaledD1 = diagonal1 * 10;
+            double scaledD2 = diagonal2 * 10;
+            double d1Offset = scaledD1 / 3;
+            double halfD2 = scaledD2 / 2;
 
             List<Point> vertices = new List<Point>
             {
-                new Point((int)(position.X + halfD1), position.Y),
-                new Point((int)(position.X + diagonal1*scale), (int)(position.Y + halfD2)),
-                new Point((int)(position.X + halfD1), (int)(position.Y + diagonal2*scale)),
-                new Point(position.X, (int)(position.Y + halfD2))
+                new Point((int)(position.X + halfD2), position.Y),
+                new Point((int)(position.X + scaledD2), (int)(position.Y + d1Offset)),
+                new Point((int)(position.X + halfD2), (int)(position.Y + scaledD1)),
+                new Point(position.X, (int)(position.Y + d1Offset))
             };
             return vertices;
         }
@@ -57,8 +58,14 @@ namespace SHAPES_2D_BOLANOS_FLORES_VENEGAS.Shapes
 
         public override double GetPerimeter()
         {
-            double side = Math.Sqrt((Diagonal1 / 2) * (Diagonal1 / 2) + (Diagonal2 / 2) * (Diagonal2 / 2));
-            return 4 * side;
+            // Kite has two pairs of equal sides
+            double d1Offset = Diagonal1 / 3;
+            double halfD2 = Diagonal2 / 2;
+
+            double side1 = Math.Sqrt(halfD2 * halfD2 + d1Offset * d1Offset);
+            double side2 = Math.Sqrt(halfD2 * halfD2 + (Diagonal1 - d1Offset) * (Diagonal1 - d1Offset));
+
+            return 2 * (side1 + side2);
         }
     }
 }

@@ -16,9 +16,16 @@ namespace SHAPES_2D_BOLANOS_FLORES_VENEGAS
         private FrmRegularPolygon frmRegularPolygon = null;
         private FrmRectangle frmRectangle = null;
         private FrmRhombus frmRhombus = null;
+        private FrmKite frmKite = null;
+        private FrmParallelogram frmIrregularPolygon = null;
+        private FrmTrapezium frmTrapezium = null;
         public FrmHome()
         {
             InitializeComponent();
+        }
+        private void miIrregularPlygonToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+
         }
 
         private void miRegularPolygonToolStripMenuItem_Click(object sender, EventArgs e)
@@ -72,6 +79,60 @@ namespace SHAPES_2D_BOLANOS_FLORES_VENEGAS
                 frmRhombus.BringToFront();
                 frmRhombus.Focus();
                 frmRhombus.WindowState = FormWindowState.Maximized;
+            }
+        }
+
+        private void cometaToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            if (frmKite == null || frmKite.IsDisposed)
+            {
+                frmKite = new FrmKite();
+                frmKite.MdiParent = this;
+                frmKite.FormBorderStyle = FormBorderStyle.None;
+                frmKite.Show();
+                frmKite.WindowState = FormWindowState.Maximized;
+            }
+            else
+            {
+                frmKite.BringToFront();
+                frmKite.Focus();
+                frmKite.WindowState = FormWindowState.Maximized;
+            }
+        }
+
+        private void miTrapecioToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            if (frmTrapezium == null || frmTrapezium.IsDisposed)
+            {
+                frmTrapezium = new FrmTrapezium();
+                frmTrapezium.MdiParent = this;
+                frmTrapezium.FormBorderStyle = FormBorderStyle.None;
+                frmTrapezium.Show();
+                frmTrapezium.WindowState = FormWindowState.Maximized;
+            }
+            else
+            {
+                frmTrapezium.BringToFront();
+                frmTrapezium.Focus();
+                frmTrapezium.WindowState = FormWindowState.Maximized;
+            }
+        }
+
+        private void miParalelogramoToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            if (frmIrregularPolygon == null || frmIrregularPolygon.IsDisposed)
+            {
+                frmIrregularPolygon = new FrmParallelogram();
+                frmIrregularPolygon.MdiParent = this;
+                frmIrregularPolygon.FormBorderStyle = FormBorderStyle.None;
+                frmIrregularPolygon.Show();
+                frmIrregularPolygon.WindowState = FormWindowState.Maximized;
+            }
+            else
+            {
+                frmIrregularPolygon.BringToFront();
+                frmIrregularPolygon.Focus();
+                frmIrregularPolygon.WindowState = FormWindowState.Maximized;
             }
         }
     }
