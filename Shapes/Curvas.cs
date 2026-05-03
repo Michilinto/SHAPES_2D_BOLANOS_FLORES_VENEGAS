@@ -1,0 +1,17 @@
+using System;
+using System.Collections.Generic;
+using System.Drawing;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace SHAPES_2D_BOLANOS_FLORES_VENEGAS.Shapes
+{
+    abstract class Curvas : Figure2D
+    {
+        public Curvas(Point position, Color color)
+            : base(position, color)
+        {
+        }
+    }
+}

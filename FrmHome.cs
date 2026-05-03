@@ -16,10 +16,13 @@ namespace SHAPES_2D_BOLANOS_FLORES_VENEGAS
             this.IsMdiContainer = true;
         }
 
+<<<<<<< HEAD
         /// <summary>
         /// Método genérico para abrir cualquier formulario dentro del contenedor MDI.
         /// Evita duplicados y maximiza la ventana hija.
         /// </summary>
+=======
+>>>>>>> c27a4ea54ab17569d5270a48eaa7a9c6781048d9
         private void AbrirFormulario<T>() where T : Form, new()
         {
             // Busca si el formulario ya existe en la lista de hijos
@@ -41,12 +44,20 @@ namespace SHAPES_2D_BOLANOS_FLORES_VENEGAS
             }
         }
 
+<<<<<<< HEAD
+=======
+        private void miIrregularPlygonToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+
+        }
+>>>>>>> c27a4ea54ab17569d5270a48eaa7a9c6781048d9
 
         private void miRegularPolygonToolStripMenuItem_Click(object sender, EventArgs e)
         {
             AbrirFormulario<FrmRegularPolygon>();
         }
 
+<<<<<<< HEAD
         private void mnuRightTriangle_Click(object sender, EventArgs e)
         {
             AbrirFormulario<FrmRightTriangle>();
@@ -89,6 +100,36 @@ namespace SHAPES_2D_BOLANOS_FLORES_VENEGAS
 
         private void FrmHome_Load(object sender, EventArgs e)
         {
+=======
+        private void miRectanguloToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            AbrirFormulario<FrmRectangle>();
+        }
+
+        private void miRomboToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            AbrirFormulario<FrmRhombus>();
+        }
+
+        private void cometaToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            AbrirFormulario<FrmKite>();
+        }
+
+        private void miTrapecioToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            AbrirFormulario<FrmTrapezium>();
+        }
+
+        private void miParalelogramoToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            AbrirFormulario<FrmParallelogram>();
+        }
+
+        private void miOvaloToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            AbrirFormulario<FrmOval>();
+>>>>>>> c27a4ea54ab17569d5270a48eaa7a9c6781048d9
         }
     }
 }
