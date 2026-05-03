@@ -48,11 +48,30 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Forms\FrmCircle.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\FrmCircle.Designer.cs">
+      <DependentUpon>FrmCircle.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\FrmElipse.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\FrmElipse.Designer.cs">
+      <DependentUpon>FrmElipse.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\FrmHome.cs" />
     <Compile Include="Forms\FrmKite.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Forms\FrmKite.Designer.cs">
       <DependentUpon>FrmKite.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\FrmOval.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\FrmOval.Designer.cs">
+      <DependentUpon>FrmOval.cs</DependentUpon>
     </Compile>
     <Compile Include="Forms\FrmParallelogram.cs">
       <SubType>Form</SubType>
@@ -85,9 +104,11 @@
       <DependentUpon>FrmTrapezium.cs</DependentUpon>
     </Compile>
     <Compile Include="Shapes\CRectangle.cs" />
+    <Compile Include="Shapes\Curvas.cs" />
     <Compile Include="Shapes\Figure2D.cs" />
     <Compile Include="Shapes\IrregularPolygon.cs" />
     <Compile Include="Shapes\Kite.cs" />
+    <Compile Include="Shapes\Oval.cs" />
     <Compile Include="Shapes\Parallelogram.cs" />
     <Compile Include="Shapes\Polygon.cs" />
     <Compile Include="Shapes\RegularPolygon.cs" />
@@ -103,6 +124,9 @@
     <Compile Include="Shapes\Trapezium.cs" />
     <EmbeddedResource Include="Forms\FrmKite.resx">
       <DependentUpon>FrmKite.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\FrmOval.resx">
+      <DependentUpon>FrmOval.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\FrmParallelogram.resx">
       <DependentUpon>FrmParallelogram.cs</DependentUpon>

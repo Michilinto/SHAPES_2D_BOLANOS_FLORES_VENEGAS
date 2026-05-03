@@ -82,5 +82,10 @@ namespace SHAPES_2D_BOLANOS_FLORES_VENEGAS.Forms
                 rombo.Draw(e.Graphics);
             }
         }
+
+        private void panel2_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
     }
 }
