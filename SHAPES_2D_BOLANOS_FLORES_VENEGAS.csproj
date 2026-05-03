@@ -48,14 +48,67 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Forms\FrmArrow.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\FrmArrow.Designer.cs">
+      <DependentUpon>FrmArrow.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\FrmCrescent.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\FrmCrescent.Designer.cs">
+      <DependentUpon>FrmCrescent.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\FrmCross.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\FrmCross.Designer.cs">
+      <DependentUpon>FrmCross.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\FrmHeart.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\FrmHeart.Designer.cs">
+      <DependentUpon>FrmHeart.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\FrmPie.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\FrmPie.Designer.cs">
+      <DependentUpon>FrmPie.cs</DependentUpon>
+    </Compile>
     <Compile Include="Forms\FrmRegularPolygon.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Forms\FrmRegularPolygon.Designer.cs">
       <DependentUpon>FrmRegularPolygon.cs</DependentUpon>
     </Compile>
+    <Compile Include="Forms\FrmRightTriangle.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\FrmRightTriangle.Designer.cs">
+      <DependentUpon>FrmRightTriangle.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\FrmScaleneTriangle.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\FrmScaleneTriangle.Designer.cs">
+      <DependentUpon>FrmScaleneTriangle.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\FrmStar.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\FrmStar.Designer.cs">
+      <DependentUpon>FrmStar.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Shapes\Arrow.cs" />
+    <Compile Include="Shapes\Crescent.cs" />
+    <Compile Include="Shapes\Cross.cs" />
     <Compile Include="Shapes\Figure2D.cs" />
+    <Compile Include="Shapes\Heart.cs" />
     <Compile Include="Shapes\IrregularPolygon.cs" />
+    <Compile Include="Shapes\Pie.cs" />
     <Compile Include="Shapes\Polygon.cs" />
     <Compile Include="Shapes\RegularPolygon.cs" />
     <Compile Include="FrmHome.cs">
@@ -66,8 +119,35 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Shapes\RightTriangle.cs" />
+    <Compile Include="Shapes\ScaleneTriangle.cs" />
+    <Compile Include="Shapes\Star.cs" />
+    <EmbeddedResource Include="Forms\FrmArrow.resx">
+      <DependentUpon>FrmArrow.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\FrmCrescent.resx">
+      <DependentUpon>FrmCrescent.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\FrmCross.resx">
+      <DependentUpon>FrmCross.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\FrmHeart.resx">
+      <DependentUpon>FrmHeart.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\FrmPie.resx">
+      <DependentUpon>FrmPie.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Forms\FrmRegularPolygon.resx">
       <DependentUpon>FrmRegularPolygon.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\FrmRightTriangle.resx">
+      <DependentUpon>FrmRightTriangle.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\FrmScaleneTriangle.resx">
+      <DependentUpon>FrmScaleneTriangle.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\FrmStar.resx">
+      <DependentUpon>FrmStar.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FrmHome.resx">
       <DependentUpon>FrmHome.cs</DependentUpon>

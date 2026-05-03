@@ -1,11 +1,8 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.ComponentModel;
 using System.Data;
 using System.Drawing;
 using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 using SHAPES_2D_BOLANOS_FLORES_VENEGAS.Forms;
 
@@ -13,29 +10,85 @@ namespace SHAPES_2D_BOLANOS_FLORES_VENEGAS
 {
     public partial class FrmHome : Form
     {
-        private FrmRegularPolygon frmRegularPolygon = null;
-
         public FrmHome()
         {
             InitializeComponent();
+            this.IsMdiContainer = true;
         }
 
-        private void miRegularPolygonToolStripMenuItem_Click(object sender, EventArgs e)
+        /// <summary>
+        /// Método genérico para abrir cualquier formulario dentro del contenedor MDI.
+        /// Evita duplicados y maximiza la ventana hija.
+        /// </summary>
+        private void AbrirFormulario<T>() where T : Form, new()
         {
-            if (frmRegularPolygon == null || frmRegularPolygon.IsDisposed)
+            // Busca si el formulario ya existe en la lista de hijos
+            Form formularioEncontrado = this.MdiChildren.FirstOrDefault(f => f is T);
+
+            if (formularioEncontrado == null || formularioEncontrado.IsDisposed)
             {
-                frmRegularPolygon = new FrmRegularPolygon();
-                frmRegularPolygon.MdiParent = this;
-                frmRegularPolygon.FormBorderStyle = FormBorderStyle.None;
-                frmRegularPolygon.Show();
-                frmRegularPolygon.WindowState = FormWindowState.Maximized;
+                // Si no existe, crea una nueva instancia
+                T nuevoFormulario = new T();
+                nuevoFormulario.MdiParent = this;
+                nuevoFormulario.FormBorderStyle = FormBorderStyle.None;
+                nuevoFormulario.WindowState = FormWindowState.Maximized;
+                nuevoFormulario.Show();
             }
             else
             {
-                frmRegularPolygon.BringToFront();
-                frmRegularPolygon.Focus();
-                frmRegularPolygon.WindowState = FormWindowState.Maximized;
+                formularioEncontrado.BringToFront();
+                formularioEncontrado.Focus();
             }
+        }
+
+
+        private void miRegularPolygonToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            AbrirFormulario<FrmRegularPolygon>();
+        }
+
+        private void mnuRightTriangle_Click(object sender, EventArgs e)
+        {
+            AbrirFormulario<FrmRightTriangle>();
+        }
+
+        private void mnuScleneTriangle_Click(object sender, EventArgs e)
+        {
+            AbrirFormulario<FrmScaleneTriangle>();
+        }
+
+        private void mnuHeart_Click(object sender, EventArgs e)
+        {
+            AbrirFormulario<FrmHeart>();
+        }
+
+        private void mnuCrescent_Click(object sender, EventArgs e)
+        {
+            AbrirFormulario<FrmCrescent>();
+        }
+
+        private void mnuPie_Click(object sender, EventArgs e)
+        {
+            AbrirFormulario<FrmPie>();
+        }
+
+        private void mnuStar_Click(object sender, EventArgs e)
+        {
+            AbrirFormulario<FrmStar>();
+        }
+
+        private void mnuCross_Click(object sender, EventArgs e)
+        {
+            AbrirFormulario<FrmCross>();
+        }
+
+        private void mnuArrow_Click(object sender, EventArgs e)
+        {
+            AbrirFormulario<FrmArrow>();
+        }
+
+        private void FrmHome_Load(object sender, EventArgs e)
+        {
         }
     }
 }
