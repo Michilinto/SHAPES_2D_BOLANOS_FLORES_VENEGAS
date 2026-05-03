@@ -2,15 +2,8 @@
 {
     partial class FrmHome
     {
-        /// <summary>
-        /// Variable del diseñador necesaria.
-        /// </summary>
         private System.ComponentModel.IContainer components = null;
 
-        /// <summary>
-        /// Limpiar los recursos que se estén usando.
-        /// </summary>
-        /// <param name="disposing">true si los recursos administrados se deben desechar; false en caso contrario.</param>
         protected override void Dispose(bool disposing)
         {
             if (disposing && (components != null))
@@ -22,37 +15,30 @@
 
         #region Código generado por el Diseñador de Windows Forms
 
-        /// <summary>
-        /// Método necesario para admitir el Diseñador. No se puede modificar
-        /// el contenido de este método con el editor de código.
-        /// </summary>
         private void InitializeComponent()
         {
             this.menuStrip1 = new System.Windows.Forms.MenuStrip();
             this.miPolygonToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.miRegularPolygonToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.miIrregularPlygonToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.mnuRightTriangle = new System.Windows.Forms.ToolStripMenuItem();
+            this.mnuScleneTriangle = new System.Windows.Forms.ToolStripMenuItem();
             this.miRectanguloToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.miRomboToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.miCometaToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.miTrapecioToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.miParalelogramoToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.miCurvesToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.miSpecialToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-<<<<<<< HEAD
-            this.mnuRightTriangle = new System.Windows.Forms.ToolStripMenuItem();
-            this.mnuScleneTriangle = new System.Windows.Forms.ToolStripMenuItem();
             this.mnuHeart = new System.Windows.Forms.ToolStripMenuItem();
             this.mnuCrescent = new System.Windows.Forms.ToolStripMenuItem();
             this.mnuPie = new System.Windows.Forms.ToolStripMenuItem();
-            this.mnuStar = new System.Windows.Forms.ToolStripMenuItem();
-            this.mnuCross = new System.Windows.Forms.ToolStripMenuItem();
-            this.mnuArrow = new System.Windows.Forms.ToolStripMenuItem();
-=======
             this.miCirculoToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.miElipseToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.miOvaloToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
->>>>>>> c27a4ea54ab17569d5270a48eaa7a9c6781048d9
+            this.miSpecialToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.mnuStar = new System.Windows.Forms.ToolStripMenuItem();
+            this.mnuCross = new System.Windows.Forms.ToolStripMenuItem();
+            this.mnuArrow = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -68,11 +54,7 @@
             this.miSpecialToolStripMenuItem});
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
-<<<<<<< HEAD
             this.menuStrip1.Size = new System.Drawing.Size(777, 28);
-=======
-            this.menuStrip1.Size = new System.Drawing.Size(777, 30);
->>>>>>> c27a4ea54ab17569d5270a48eaa7a9c6781048d9
             this.menuStrip1.TabIndex = 1;
             this.menuStrip1.Text = "menuStrip1";
             // 
@@ -84,113 +66,30 @@
             this.miPolygonToolStripMenuItem.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.999999F, System.Drawing.FontStyle.Bold);
             this.miPolygonToolStripMenuItem.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(205)))), ((int)(((byte)(98)))));
             this.miPolygonToolStripMenuItem.Name = "miPolygonToolStripMenuItem";
-<<<<<<< HEAD
-            this.miPolygonToolStripMenuItem.Size = new System.Drawing.Size(105, 26);
-=======
-            this.miPolygonToolStripMenuItem.Size = new System.Drawing.Size(114, 25);
->>>>>>> c27a4ea54ab17569d5270a48eaa7a9c6781048d9
+            this.miPolygonToolStripMenuItem.Size = new System.Drawing.Size(105, 24);
             this.miPolygonToolStripMenuItem.Text = "Polígonos";
             // 
             // miRegularPolygonToolStripMenuItem
             // 
             this.miRegularPolygonToolStripMenuItem.Name = "miRegularPolygonToolStripMenuItem";
-<<<<<<< HEAD
             this.miRegularPolygonToolStripMenuItem.Size = new System.Drawing.Size(271, 26);
-=======
-            this.miRegularPolygonToolStripMenuItem.Size = new System.Drawing.Size(314, 26);
->>>>>>> c27a4ea54ab17569d5270a48eaa7a9c6781048d9
             this.miRegularPolygonToolStripMenuItem.Text = "Polígonos Regulares";
             this.miRegularPolygonToolStripMenuItem.Click += new System.EventHandler(this.miRegularPolygonToolStripMenuItem_Click);
             // 
             // miIrregularPlygonToolStripMenuItem
             // 
             this.miIrregularPlygonToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-<<<<<<< HEAD
             this.mnuRightTriangle,
-            this.mnuScleneTriangle});
-            this.miIrregularPlygonToolStripMenuItem.Name = "miIrregularPlygonToolStripMenuItem";
-            this.miIrregularPlygonToolStripMenuItem.Size = new System.Drawing.Size(271, 26);
-=======
+            this.mnuScleneTriangle,
             this.miRectanguloToolStripMenuItem,
             this.miRomboToolStripMenuItem,
             this.miCometaToolStripMenuItem,
             this.miTrapecioToolStripMenuItem,
             this.miParalelogramoToolStripMenuItem});
             this.miIrregularPlygonToolStripMenuItem.Name = "miIrregularPlygonToolStripMenuItem";
-            this.miIrregularPlygonToolStripMenuItem.Size = new System.Drawing.Size(314, 26);
->>>>>>> c27a4ea54ab17569d5270a48eaa7a9c6781048d9
+            this.miIrregularPlygonToolStripMenuItem.Size = new System.Drawing.Size(271, 26);
             this.miIrregularPlygonToolStripMenuItem.Text = "Polígonos Irregulares";
             this.miIrregularPlygonToolStripMenuItem.Click += new System.EventHandler(this.miIrregularPlygonToolStripMenuItem_Click);
-            // 
-            // miRectanguloToolStripMenuItem
-            // 
-            this.miRectanguloToolStripMenuItem.Name = "miRectanguloToolStripMenuItem";
-            this.miRectanguloToolStripMenuItem.Size = new System.Drawing.Size(234, 26);
-            this.miRectanguloToolStripMenuItem.Text = "Rectangulo";
-            this.miRectanguloToolStripMenuItem.Click += new System.EventHandler(this.miRectanguloToolStripMenuItem_Click);
-            // 
-            // miRomboToolStripMenuItem
-            // 
-            this.miRomboToolStripMenuItem.Name = "miRomboToolStripMenuItem";
-            this.miRomboToolStripMenuItem.Size = new System.Drawing.Size(234, 26);
-            this.miRomboToolStripMenuItem.Text = "Rombo";
-            this.miRomboToolStripMenuItem.Click += new System.EventHandler(this.miRomboToolStripMenuItem_Click);
-            // 
-            // miCometaToolStripMenuItem
-            // 
-            this.miCometaToolStripMenuItem.Name = "miCometaToolStripMenuItem";
-            this.miCometaToolStripMenuItem.Size = new System.Drawing.Size(234, 26);
-            this.miCometaToolStripMenuItem.Text = "Kite";
-            this.miCometaToolStripMenuItem.Click += new System.EventHandler(this.cometaToolStripMenuItem_Click);
-            // 
-            // miTrapecioToolStripMenuItem
-            // 
-            this.miTrapecioToolStripMenuItem.Name = "miTrapecioToolStripMenuItem";
-            this.miTrapecioToolStripMenuItem.Size = new System.Drawing.Size(234, 26);
-            this.miTrapecioToolStripMenuItem.Text = "Trapecio";
-            this.miTrapecioToolStripMenuItem.Click += new System.EventHandler(this.miTrapecioToolStripMenuItem_Click);
-            // 
-            // miParalelogramoToolStripMenuItem
-            // 
-            this.miParalelogramoToolStripMenuItem.Name = "miParalelogramoToolStripMenuItem";
-            this.miParalelogramoToolStripMenuItem.Size = new System.Drawing.Size(234, 26);
-            this.miParalelogramoToolStripMenuItem.Text = "Paralelogramo";
-            this.miParalelogramoToolStripMenuItem.Click += new System.EventHandler(this.miParalelogramoToolStripMenuItem_Click);
-            // 
-            // miCurvesToolStripMenuItem
-            // 
-            this.miCurvesToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-<<<<<<< HEAD
-            this.mnuHeart,
-            this.mnuCrescent,
-            this.mnuPie});
-            this.miCurvesToolStripMenuItem.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.999999F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.miCurvesToolStripMenuItem.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(205)))), ((int)(((byte)(98)))));
-            this.miCurvesToolStripMenuItem.Name = "miCurvesToolStripMenuItem";
-            this.miCurvesToolStripMenuItem.Size = new System.Drawing.Size(181, 26);
-=======
-            this.miCirculoToolStripMenuItem,
-            this.miElipseToolStripMenuItem,
-            this.miOvaloToolStripMenuItem});
-            this.miCurvesToolStripMenuItem.Font = new System.Drawing.Font("Ubuntu Mono Medium", 9.999999F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.miCurvesToolStripMenuItem.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(205)))), ((int)(((byte)(98)))));
-            this.miCurvesToolStripMenuItem.Name = "miCurvesToolStripMenuItem";
-            this.miCurvesToolStripMenuItem.Size = new System.Drawing.Size(194, 26);
->>>>>>> c27a4ea54ab17569d5270a48eaa7a9c6781048d9
-            this.miCurvesToolStripMenuItem.Text = "Figuras Curveadas";
-            // 
-            // miSpecialToolStripMenuItem
-            // 
-            this.miSpecialToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.mnuStar,
-            this.mnuCross,
-            this.mnuArrow});
-            this.miSpecialToolStripMenuItem.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.999999F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.miSpecialToolStripMenuItem.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(205)))), ((int)(((byte)(98)))));
-            this.miSpecialToolStripMenuItem.Name = "miSpecialToolStripMenuItem";
-<<<<<<< HEAD
-            this.miSpecialToolStripMenuItem.Size = new System.Drawing.Size(184, 26);
-            this.miSpecialToolStripMenuItem.Text = "Figuras Especiales";
             // 
             // mnuRightTriangle
             // 
@@ -205,6 +104,56 @@
             this.mnuScleneTriangle.Size = new System.Drawing.Size(270, 26);
             this.mnuScleneTriangle.Text = "Triángulo Escaleno";
             this.mnuScleneTriangle.Click += new System.EventHandler(this.mnuScleneTriangle_Click);
+            // 
+            // miRectanguloToolStripMenuItem
+            // 
+            this.miRectanguloToolStripMenuItem.Name = "miRectanguloToolStripMenuItem";
+            this.miRectanguloToolStripMenuItem.Size = new System.Drawing.Size(270, 26);
+            this.miRectanguloToolStripMenuItem.Text = "Rectangulo";
+            this.miRectanguloToolStripMenuItem.Click += new System.EventHandler(this.miRectanguloToolStripMenuItem_Click);
+            // 
+            // miRomboToolStripMenuItem
+            // 
+            this.miRomboToolStripMenuItem.Name = "miRomboToolStripMenuItem";
+            this.miRomboToolStripMenuItem.Size = new System.Drawing.Size(270, 26);
+            this.miRomboToolStripMenuItem.Text = "Rombo";
+            this.miRomboToolStripMenuItem.Click += new System.EventHandler(this.miRomboToolStripMenuItem_Click);
+            // 
+            // miCometaToolStripMenuItem
+            // 
+            this.miCometaToolStripMenuItem.Name = "miCometaToolStripMenuItem";
+            this.miCometaToolStripMenuItem.Size = new System.Drawing.Size(270, 26);
+            this.miCometaToolStripMenuItem.Text = "Kite";
+            this.miCometaToolStripMenuItem.Click += new System.EventHandler(this.cometaToolStripMenuItem_Click);
+            // 
+            // miTrapecioToolStripMenuItem
+            // 
+            this.miTrapecioToolStripMenuItem.Name = "miTrapecioToolStripMenuItem";
+            this.miTrapecioToolStripMenuItem.Size = new System.Drawing.Size(270, 26);
+            this.miTrapecioToolStripMenuItem.Text = "Trapecio";
+            this.miTrapecioToolStripMenuItem.Click += new System.EventHandler(this.miTrapecioToolStripMenuItem_Click);
+            // 
+            // miParalelogramoToolStripMenuItem
+            // 
+            this.miParalelogramoToolStripMenuItem.Name = "miParalelogramoToolStripMenuItem";
+            this.miParalelogramoToolStripMenuItem.Size = new System.Drawing.Size(270, 26);
+            this.miParalelogramoToolStripMenuItem.Text = "Paralelogramo";
+            this.miParalelogramoToolStripMenuItem.Click += new System.EventHandler(this.miParalelogramoToolStripMenuItem_Click);
+            // 
+            // miCurvesToolStripMenuItem
+            // 
+            this.miCurvesToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.mnuHeart,
+            this.mnuCrescent,
+            this.mnuPie,
+            this.miCirculoToolStripMenuItem,
+            this.miElipseToolStripMenuItem,
+            this.miOvaloToolStripMenuItem});
+            this.miCurvesToolStripMenuItem.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.999999F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.miCurvesToolStripMenuItem.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(205)))), ((int)(((byte)(98)))));
+            this.miCurvesToolStripMenuItem.Name = "miCurvesToolStripMenuItem";
+            this.miCurvesToolStripMenuItem.Size = new System.Drawing.Size(181, 24);
+            this.miCurvesToolStripMenuItem.Text = "Figuras Curveadas";
             // 
             // mnuHeart
             // 
@@ -227,41 +176,19 @@
             this.mnuPie.Text = "Pie";
             this.mnuPie.Click += new System.EventHandler(this.mnuPie_Click);
             // 
-            // mnuStar
-            // 
-            this.mnuStar.Name = "mnuStar";
-            this.mnuStar.Size = new System.Drawing.Size(224, 26);
-            this.mnuStar.Text = "Estrella";
-            this.mnuStar.Click += new System.EventHandler(this.mnuStar_Click);
-            // 
-            // mnuCross
-            // 
-            this.mnuCross.Name = "mnuCross";
-            this.mnuCross.Size = new System.Drawing.Size(224, 26);
-            this.mnuCross.Text = "Cruz";
-            this.mnuCross.Click += new System.EventHandler(this.mnuCross_Click);
-            // 
-            // mnuArrow
-            // 
-            this.mnuArrow.Name = "mnuArrow";
-            this.mnuArrow.Size = new System.Drawing.Size(224, 26);
-            this.mnuArrow.Text = "Flecha";
-            this.mnuArrow.Click += new System.EventHandler(this.mnuArrow_Click);
-=======
-            this.miSpecialToolStripMenuItem.Size = new System.Drawing.Size(204, 25);
-            this.miSpecialToolStripMenuItem.Text = "Figuras Especiales";
-            // 
             // miCirculoToolStripMenuItem
             // 
             this.miCirculoToolStripMenuItem.Name = "miCirculoToolStripMenuItem";
             this.miCirculoToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
             this.miCirculoToolStripMenuItem.Text = "Círculo";
+            this.miCirculoToolStripMenuItem.Click += new System.EventHandler(this.miCirculoToolStripMenuItem_Click);
             // 
             // miElipseToolStripMenuItem
             // 
             this.miElipseToolStripMenuItem.Name = "miElipseToolStripMenuItem";
             this.miElipseToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
             this.miElipseToolStripMenuItem.Text = "Elipse";
+            this.miElipseToolStripMenuItem.Click += new System.EventHandler(this.miElipseToolStripMenuItem_Click);
             // 
             // miOvaloToolStripMenuItem
             // 
@@ -269,7 +196,39 @@
             this.miOvaloToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
             this.miOvaloToolStripMenuItem.Text = "Ovalo";
             this.miOvaloToolStripMenuItem.Click += new System.EventHandler(this.miOvaloToolStripMenuItem_Click);
->>>>>>> c27a4ea54ab17569d5270a48eaa7a9c6781048d9
+            // 
+            // miSpecialToolStripMenuItem
+            // 
+            this.miSpecialToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.mnuStar,
+            this.mnuCross,
+            this.mnuArrow});
+            this.miSpecialToolStripMenuItem.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.999999F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.miSpecialToolStripMenuItem.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(205)))), ((int)(((byte)(98)))));
+            this.miSpecialToolStripMenuItem.Name = "miSpecialToolStripMenuItem";
+            this.miSpecialToolStripMenuItem.Size = new System.Drawing.Size(184, 24);
+            this.miSpecialToolStripMenuItem.Text = "Figuras Especiales";
+            // 
+            // mnuStar
+            // 
+            this.mnuStar.Name = "mnuStar";
+            this.mnuStar.Size = new System.Drawing.Size(157, 26);
+            this.mnuStar.Text = "Estrella";
+            this.mnuStar.Click += new System.EventHandler(this.mnuStar_Click);
+            // 
+            // mnuCross
+            // 
+            this.mnuCross.Name = "mnuCross";
+            this.mnuCross.Size = new System.Drawing.Size(157, 26);
+            this.mnuCross.Text = "Cruz";
+            this.mnuCross.Click += new System.EventHandler(this.mnuCross_Click);
+            // 
+            // mnuArrow
+            // 
+            this.mnuArrow.Name = "mnuArrow";
+            this.mnuArrow.Size = new System.Drawing.Size(157, 26);
+            this.mnuArrow.Text = "Flecha";
+            this.mnuArrow.Click += new System.EventHandler(this.mnuArrow_Click);
             // 
             // FrmHome
             // 
@@ -299,7 +258,7 @@
         private System.Windows.Forms.ToolStripMenuItem miIrregularPlygonToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem miCurvesToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem miSpecialToolStripMenuItem;
-<<<<<<< HEAD
+        // ── Tuyos ──
         private System.Windows.Forms.ToolStripMenuItem mnuRightTriangle;
         private System.Windows.Forms.ToolStripMenuItem mnuScleneTriangle;
         private System.Windows.Forms.ToolStripMenuItem mnuHeart;
@@ -308,7 +267,7 @@
         private System.Windows.Forms.ToolStripMenuItem mnuCross;
         private System.Windows.Forms.ToolStripMenuItem mnuArrow;
         private System.Windows.Forms.ToolStripMenuItem mnuStar;
-=======
+        // ── Compañeros ──
         private System.Windows.Forms.ToolStripMenuItem miRectanguloToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem miRomboToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem miCometaToolStripMenuItem;
@@ -317,7 +276,5 @@
         private System.Windows.Forms.ToolStripMenuItem miCirculoToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem miElipseToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem miOvaloToolStripMenuItem;
->>>>>>> c27a4ea54ab17569d5270a48eaa7a9c6781048d9
     }
 }
-
