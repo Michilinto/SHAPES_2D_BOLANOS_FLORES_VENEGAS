@@ -133,6 +133,7 @@
     <Compile Include="Forms\FrmTrapezium.Designer.cs">
       <DependentUpon>FrmTrapezium.cs</DependentUpon>
     </Compile>
+    <Compile Include="Shapes\CCircle.cs" />
     <Compile Include="Shapes\CRectangle.cs" />
     <Compile Include="Shapes\Curvas.cs" />
     <Compile Include="Forms\FrmRightTriangle.cs">
@@ -156,6 +157,7 @@
     <Compile Include="Shapes\Arrow.cs" />
     <Compile Include="Shapes\Crescent.cs" />
     <Compile Include="Shapes\Cross.cs" />
+    <Compile Include="Shapes\Elipse.cs" />
     <Compile Include="Shapes\Figure2D.cs" />
     <Compile Include="Shapes\Heart.cs" />
     <Compile Include="Shapes\IrregularPolygon.cs" />
@@ -175,6 +177,12 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Shapes\Rhombus.cs" />
     <Compile Include="Shapes\Trapezium.cs" />
+    <EmbeddedResource Include="Forms\FrmCircle.resx">
+      <DependentUpon>FrmCircle.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\FrmElipse.resx">
+      <DependentUpon>FrmElipse.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Forms\FrmKite.resx">
       <DependentUpon>FrmKite.cs</DependentUpon>
     </EmbeddedResource>

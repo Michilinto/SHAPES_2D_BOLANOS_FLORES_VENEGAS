@@ -21,7 +21,8 @@ namespace SHAPES_2D_BOLANOS_FLORES_VENEGAS.Shapes
 
         public override void Draw(Graphics g)
         {
-            using (Pen pen = new Pen(Color))
+            using (SolidBrush brush = new SolidBrush(Color.FromArgb(111, 171, 129)))
+            using (Pen pen = new Pen(Color.FromArgb(9, 77, 29), 3))
             {
                 // Dibujar un ovoide como una aproximación usando arcos y líneas
                 float x = Position.X;
@@ -30,6 +31,7 @@ namespace SHAPES_2D_BOLANOS_FLORES_VENEGAS.Shapes
                 float minorR = (float)MinorAxis;
 
                 // Dibujar la parte superior (semicírculo)
+                g.FillEllipse(brush, x - minorR, y - majorR, minorR * 2, minorR * 2);
                 g.DrawArc(pen, x - minorR, y - majorR, minorR * 2, minorR * 2, 0, 180);
 
                 // Dibujar los lados
@@ -37,6 +39,7 @@ namespace SHAPES_2D_BOLANOS_FLORES_VENEGAS.Shapes
                 g.DrawLine(pen, x + minorR, y, x + minorR, y + majorR);
 
                 // Dibujar la parte inferior (punta)
+                g.FillEllipse(brush, x - minorR / 2, y, minorR, majorR);
                 g.DrawArc(pen, x - minorR / 2, y, minorR, majorR, 0, 360);
             }
         }
