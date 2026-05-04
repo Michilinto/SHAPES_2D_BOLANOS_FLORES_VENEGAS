@@ -50,7 +50,7 @@ namespace SHAPES_2D_BOLANOS_FLORES_VENEGAS.Forms
                     lblMessage.Text = "Los valores deben ser mayores a 0";
                     return;
                 }
-                Point position = new Point(50, 50);
+                Point position = new Point(150, 150);
                 oval = new Oval(position, Color.Purple, majorAxis, minorAxis);
                 lblArea.Text = oval.GetArea().ToString("F2");
                 lblPerimeter.Text = oval.GetPerimeter().ToString("F2");

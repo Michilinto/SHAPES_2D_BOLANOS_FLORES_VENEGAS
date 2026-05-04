@@ -54,7 +54,7 @@ namespace SHAPES_2D_BOLANOS_FLORES_VENEGAS.Forms
                     lblMessage.Text = "Los valores deben ser mayores a 0";
                     return;
                 }
-                Point position = new Point(50, 50);
+                Point position = new Point(150, 150);
                 elipse = new Elipse(position, Color.Purple, majorAxis, minorAxis);
                 lblArea.Text = elipse.GetArea().ToString("F2");
                 lblPerimeter.Text = elipse.GetPerimeter().ToString("F2");

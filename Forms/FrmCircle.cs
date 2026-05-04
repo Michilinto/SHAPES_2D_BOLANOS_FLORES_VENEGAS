@@ -38,9 +38,8 @@ namespace SHAPES_2D_BOLANOS_FLORES_VENEGAS.Forms
                     lblMessage.Text = "El valor debe ser mayor a 0";
                     return;
                 }
-                double diameter = radius * 2;
-                Point position = new Point(50, 50);
-                circle = new CCircle(position, Color.Orange, diameter);
+                Point position = new Point(150, 150);
+                circle = new CCircle(position, Color.Orange, radius);
                 lblArea.Text = circle.GetArea().ToString("F2");
                 lblPerimeter.Text = circle.GetPerimeter().ToString("F2");
                 lblMessage.Text = "Círculo calculado correctamente";
